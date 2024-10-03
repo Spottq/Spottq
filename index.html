@@ -19,12 +19,15 @@
             background-position: center; /* Центрировать фон */
         }
 
+        /* Контейнер с эффектом стеклянного фона */
         .container {
-            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон для текста */
+            background: rgba(128, 128, 128, 0.5); /* Полупрозрачный серый фон */
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 15px; /* Закругленные углы */
             text-align: center;
             max-width: 500px;
+            backdrop-filter: blur(10px); /* Размытие фона за контейнером */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Тень для эффекта глубины */
         }
 
         h1 {
@@ -72,7 +75,6 @@
             <p><strong>Laptop:</strong> Macbook Air M1 - MacOS 15.1</p>
             <p><strong>Headphones:</strong> CMF Buds Pro 2</p>
         </div>
-
         <!-- Ссылки на Telegram, Discord и GitHub с иконками -->
         <div class="icons">
             <a href="https://t.me/spottq" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
