@@ -12,14 +12,24 @@
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Градиентный фон */
+            background: linear-gradient(135deg, rgba(29, 78, 216, 0.8), rgba(102, 126, 234, 0.8), rgba(67, 56, 202, 0.8), rgba(165, 92, 255, 0.8)); /* Градиент в сине-фиолетовых тонах */
+            background-size: 200% 200%;
+            animation: gradientAnimation 8s ease infinite;
         }
+        
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         h1 {
             color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Легкая тень для текста */
         }
     </style>
 </head>
 <body>
-    <h1>Привет! Это мой сайт с градиентным фоном</h1>
+    <h1>Добро пожаловать на мой сайт!</h1>
 </body>
 </html>
