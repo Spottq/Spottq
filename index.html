@@ -12,29 +12,18 @@
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, 
-                rgba(5, 10, 20, 0.95),  
-                rgba(20, 10, 40, 0.95), 
-                rgba(30, 10, 50, 0.95), 
-                rgba(45, 20, 60, 0.95),  
-                rgba(20, 5, 30, 0.95)   
-            );
-            background-size: 200% 200%;
-            animation: gradientAnimation 10s ease infinite;
-        }
-
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            color: white;
+            background-image: url('rain.gif'); /* Замени на путь к твоей GIF */
+            background-size: cover; /* GIF растянется на весь экран */
+            background-repeat: no-repeat; /* Не повторять фон */
+            background-position: center; /* Центрировать фон */
         }
 
         .container {
-            background-color: rgba(128, 128, 128, 0.7); 
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон для текста */
             padding: 30px;
             border-radius: 10px;
             text-align: center;
-            color: white;
             max-width: 500px;
         }
 
@@ -62,7 +51,8 @@
         }
     </style>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Подключаем иконки Font Awesome для Telegram, Discord и GitHub -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
@@ -83,10 +73,11 @@
             <p><strong>Headphones:</strong> CMF Buds Pro 2</p>
         </div>
 
+        <!-- Ссылки на Telegram, Discord и GitHub с иконками -->
         <div class="icons">
-            <a href="https://t.me/spottq" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-            <a href="https://discord.com/users/934128531812777984" target="_blank"><i class="fab fa-discord"></i></a>
-            <a href="https://github.com/Spottq" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/spottq" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://discord.com/users/934128531812777984" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com/Spottq" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
     </div>
 
